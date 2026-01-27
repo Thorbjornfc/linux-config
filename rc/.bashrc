@@ -24,9 +24,10 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-. "$HOME/.cargo/env"
-
-export PATH=$PATH:$HOME/.cargo/bin
+if [[ -d ~/.cargo/env ]]; then
+  . "$HOME/.cargo/env"
+  export PATH=$PATH:$HOME/.cargo/bin
+fi
 
 # Black        0;30     Dark Gray     1;30
 # Red          0;31     Light Red     1;31

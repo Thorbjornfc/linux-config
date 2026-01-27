@@ -7,3 +7,5 @@ if [[ -f ~/.inputrc ]]; then
   rm ~/.inputrc
 fi
 ln -s ~/.config/rc/.inputrc ~/.inputrc
+source ~/.bashrc
+source ~/.inputrc
