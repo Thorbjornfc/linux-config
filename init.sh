@@ -1,3 +1,8 @@
+read -p "Warning! Continuing replaces current '.bashrc' and '.inputrc'. Press Y to continue, any other key to exit: " input
+if [[ "$input"!="y" && "$input"!="Y" ]]; then
+  exit 0
+fi
+
 if [[ -f ~/.bashrc ]]; then
   rm ~/.bashrc
 fi
@@ -8,4 +13,4 @@ if [[ -f ~/.inputrc ]]; then
 fi
 ln -s ~/.config/rc/.inputrc ~/.inputrc
 source ~/.bashrc
-source ~/.inputrc
+bind -f ~/.inputrc

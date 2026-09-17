@@ -76,6 +76,9 @@ return {
         bacon_ls = {
           enabled = diagnostics == "bacon_ls",
         },
+        jinja_lsp = {
+          filetypes = { "jinja", "html" },
+        },
       },
     },
   },
