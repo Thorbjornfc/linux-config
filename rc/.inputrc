@@ -1,6 +1,7 @@
+# Ignore case on autocomplete
 set completion-ignore-case On
 
-
+# Tab to show options first if ambiguous, then cycle through
 set show-all-if-ambiguous on
 set menu-complete-display-prefix on
 "\t": menu-complete
