@@ -1,6 +1,10 @@
 # Ignore case on autocomplete
 set completion-ignore-case On
 
+
+# avoid freeze on tab to complete in reverse-i-search
+set isearch-terminators "\e\033\011"
+
 # Tab to show options first if ambiguous, then cycle through
 set show-all-if-ambiguous on
 set menu-complete-display-prefix on
